@@ -1,0 +1,27 @@
+<!-- templates/input.html -->
+
+<!doctype html>
+<html>
+  <head>
+    <title>Validator AVG_Rewards Tool</title>
+  </head>
+  <body>
+    <h1>Validator AVG_Rewards Tool</h1>
+    <form method="POST">
+      Validator Address: <br>
+      <input type="text" name="add_validator"><br>
+      Era: <br>
+      <input type="text" name="era"><br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
+
+<html>
+
+  <body>
+    <h1>Results for {{ add_validator }} in era {{ era }}</h1>
+    <h1>avg_rewards is  {{ avg_validator_rewards }} and std_avg_reward is  {{ std_validator_rewards }}</h1>
+    <h1>The validator's activity ratio is  {{ active_ratio_validator }} %</h1>
+  </body>
+</html>
